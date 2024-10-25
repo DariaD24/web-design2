@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дарья</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+      <h1>Таблица</h1>
+    <!-- Сетка с Bootstrap -->
+    <div class="row">
+      <div class="col-4"><img src="image/1.webp" class="img-fluid"></div>
+      <div class="col-4"><img src="image/2.webp" class="img-fluid"></div>
+      <div class="col-4"><img src="image/3.webp" class="img-fluid"></div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-4"><img src="image/4.webp" class="img-fluid"></div>
+      <div class="col-4"><img src="image/5.webp" class="img-fluid"></div>
+      <div class="col-4"><img src="image/6.webp" class="img-fluid"></div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-4"><img src="image/7.webp" class="img-fluid"></div>
+      <div class="col-4"><img src="image/8.webp" class="img-fluid"></div>
+      <div class="col-4"><img src="image/9.webp" class="img-fluid"></div>
+    </div>
+
+    <ul class="mt-4">
+      <li>кошка1</li>
+      <li>кошка2</li>
+    </ul>
+    <p>@dashulik2429</p>
+
+    <!-- Ссылка -->
+    <a href="https://example.com" class="btn btn-danger">Ссылка</a>
+<br><br><br>
+
+  <!-- Сетка с тремя колонками (Задание 1) -->
+  <div class="row">
+    <div class="col-3" style="background-color: lightgray;">Боковая колонка</div>
+    <div class="col-6" style="background-color: lightblue;">Центральная колонка</div>
+    <div class="col-3" style="background-color: lightgray;">Боковая колонка</div>
+  </div>
+
+    <!-- Форма (Задание 2) -->
+    <h2 class="mt-5">Форма обратной связи</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Имя</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Сообщение</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning w-100">Отправить</button>
+    </form>
+
+    <!-- Карточка (Задание 3) -->
+    <div class="card mt-5">
+      <img src="image/card-image.jpg" class="card-img-top" alt="Картинка">
+      <div class="card-body">
+        <h5 class="card-title">Заголовок карточки</h5>
+        <p class="card-text">Текст карточки. Вы можете использовать это пространство для описания или другой важной информации.</p>
+        <a href="#" class="btn btn-primary">Подробнее</a>
+      </div>
+    </div>
+
+<!-- Alert (Задание 5) -->
+<div class="alert alert-danger mt-5" role="alert">
+  Произошла ошибка! Проверьте введенные данные.
+</div>
+
+<!-- Сетка с адаптацией на маленьких экранах (Задание 6) -->
+<div class="row mt-5">
+  <div class="col-4" style="background-color: lightgreen;">Колонка 1</div>
+  <div class="col-4" style="background-color: lightyellow;">Колонка 2</div>
+  <div class="col-4" style="background-color: lightpink;">Колонка 3</div>
+</div>
+
+<!-- Выпадающий список (Задание 7) -->
+<div class="dropdown mt-5">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Выпадающий список
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Пункт 1</a></li>
+    <li><a class="dropdown-item" href="#">Пункт 2</a></li>
+    <li><a class="dropdown-item" href="#">Пункт 3</a></li>
+  </ul>
+</div>
+
+<!-- Панель вкладок (Задание 8) -->
+<ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">Вкладка 1</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Вкладка 2</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Вкладка 3</button>
+  </li>
+</ul>
+<div class="tab-content mt-3" id="myTabContent">
+  <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">Содержимое вкладки 1</div>
+  <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">Содержимое вкладки 2</div>
+  <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">Содержимое вкладки 3</div>
+</div>
+
+<!-- Блок с кнопками (Задание 9) -->
+<div class="mt-5">
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-secondary">Secondary</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-danger">Danger</button>
+  <button class="btn btn-warning">Warning</button>
+  <button class="btn btn-info">Info</button>
+  <button class="btn btn-light">Light</button>
+  <button class="btn btn-dark">Dark</button>
+</div>
+
+</div>
+
+<!-- Футер (Задание 10) -->
+    <footer class="bg-light py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2024 Дарья. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

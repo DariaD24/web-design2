@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: green;
+    text-align: center;
+    
+}
+
+h1 {
+    color: blue;
+}
+
+.box {
+    background-color: lightgray;;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: red;
+}
+
+table {
+    border: 2 px solid black;
+    border-collapse: collapse;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}

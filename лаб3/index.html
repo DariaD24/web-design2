@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Лабораторная работа 3</h1>
+
+    <!-- 1. Вывести числа от 1 до 10 с помощью цикла for -->
+    <h2>1. Вывод чисел от 1 до 10</h2>
+    <button onclick="printNumbers()">Показать числа в консоли</button>
+    <script>
+        function printNumbers() {
+            for (let i = 1; i <= 10; i++) {
+                console.log(i);
+            }
+        }
+    </script>
+
+    <!-- 2. Функция для суммы двух чисел -->
+    <h2>2. Сложение двух чисел</h2>
+    <button onclick="alert(sum(5, 7))">Сумма 5 и 7</button>
+    <script>
+        function sum(a, b) {
+            return a + b;
+        }
+    </script>
+
+    <!-- 3. Изменение текста заголовка при загрузке страницы -->
+    <h2>3. Изменение текста заголовка при загрузке страницы</h2>
+    <script>
+        window.onload = function() {
+            document.querySelector('h1').textContent = "Изменённый заголовок при загрузке";
+        };
+    </script>
+
+    <!-- 4. Функция для добавления элемента в конец списка -->
+    <h2>4. Добавление элемента в конец списка</h2>
+    <ul id="myList">
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+    </ul>
+    <button onclick="addListItem()">Добавить элемент в список</button>
+    <script>
+        function addListItem() {
+            const ul = document.getElementById('myList');
+            const li = document.createElement('li');
+            li.textContent = 'Новый элемент';
+            ul.appendChild(li);
+        }
+    </script>
+
+    <!-- 5. Вывод элементов массива на страницу -->
+    <h2>5. Массив с пятью элементами</h2>
+    <script>
+        const array = ['Элемент 1', 'Элемент 2', 'Элемент 3', 'Элемент 4', 'Элемент 5'];
+        array.forEach(item => {
+            document.write(item + '<br>');
+        });
+    </script>
+
+    <!-- 6. Проверка числа на чётность -->
+    <h2>6. Проверка числа на чётность</h2>
+    <button onclick="checkEven()">Проверить чётность</button>
+    <script>
+        function checkEven() {
+            const number = prompt("Введите число:");
+            if (number % 2 === 0) {
+                alert("Число чётное");
+            } else {
+                alert("Число нечётное");
+            }
+        }
+    </script>
+
+    <!-- 7. Изменение цвета фона -->
+    <h2>7. Изменение цвета фона</h2>
+    <button onclick="changeBackgroundColor()">Изменить цвет фона</button>
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = 'lightpurple';
+        }
+    </script>
+
+    <!-- 8. Добавление нового элемента в таблицу -->
+    <h2>8. Добавить новый элемент в таблицу</h2>
+    <table id="myTable">
+        <tr>
+            <th>Имя</th>
+            <th>Возраст</th>
+        </tr>
+        <tr>
+            <td>Анна</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <button onclick="addTableRow()">Добавить строку</button>
+    <script>
+        function addTableRow() {
+            const table = document.getElementById('myTable');
+            const row = table.insertRow();
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            cell1.textContent = 'Иван';
+            cell2.textContent = '25';
+        }
+    </script>
+
+    <!-- 9. Изменение шрифта заголовка при наведении -->
+    <h2>9. Изменение шрифта заголовка при наведении</h2>
+    <h3 id="hoverTitle" onmouseover="changeFont()" onmouseout="resetFont()">Наведи на меня</h3>
+    <script>
+        function changeFont() {
+            document.getElementById('hoverTitle').style.fontFamily = 'Courier New';
+        }
+        function resetFont() {
+            document.getElementById('hoverTitle').style.fontFamily = '';
+        }
+    </script>
+
+    <!-- 10. Кнопка скрыть/показать элемент -->
+    <h2>10. Скрыть/Показать элемент</h2>
+    <button onclick="toggleVisibility()">Скрыть/Показать текст</button>
+    <p id="text">Этот текст можно скрыть или показать.</p>
+    <script>
+        function toggleVisibility() {
+            const text = document.getElementById('text');
+            if (text.style.display === 'none') {
+                text.style.display = 'block';
+            } else {
+                text.style.display = 'none';
+            }
+        }
+    </script>
+
+    <!-- Индивидуальное задание: Скрыть/Показать изображения -->
+    <h2>Индивидуальное задание: Скрыть/Показать изображения</h2>
+    <button onclick="toggleImages()">Скрыть/Показать изображения</button>
+    <br><br>
+    <img src="img/cat1.jpg" alt="Изображение 1" style="width: 150px; height: auto;">
+    <img src="img/cat2.jpg" alt="Изображение 2" style="width: 150px; height: auto;">
+    <script>
+        function toggleImages() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (img.style.display === 'none') {
+                    img.style.display = 'block';
+                } else {
+                    img.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
