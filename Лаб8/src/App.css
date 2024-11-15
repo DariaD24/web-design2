@@ -50,3 +50,144 @@ header {
   border: 2px solid black;
 }
 
+/* HoverList */
+.hover-item {
+  cursor: pointer;
+}
+.hover-item:hover {
+  color: red;
+}
+
+/* Additional styles for ImageGrid (if needed) */
+.image-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+/* styles/ProductTable*/
+
+/* Центрирование таблицы и ограничение её ширины */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse; /* Убираем двойные границы между ячейками */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+  background-color: #ffffff; /* Белый фон таблицы */
+  overflow: hidden;
+}
+
+
+
+th {
+  padding: 12px; /* Отступы внутри ячеек заголовка */
+  font-weight: bold;
+  text-align: left; /* Выравнивание текста по левому краю */
+  border-bottom: 2px solid #ddd; /* Нижняя граница для разделения */
+}
+
+/* Стили для ячеек данных */
+td {
+  padding: 12px; /* Отступы внутри ячеек */
+  border-bottom: 1px solid #ddd; /* Разделительные линии между строками */
+  text-align: left; /* Выравнивание текста по левому краю */
+}
+
+/* Убираем нижнюю границу у последней строки */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ImageGrid.css */
+
+/* Контейнер сетки изображений */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Колонки адаптируются */
+  gap: 5px; /* Отступы между изображениями */
+  margin: 20px; /* Внешние отступы контейнера */
+  justify-items: center; /* Центрируем изображения в ячейках */
+}
+
+/* Стили для изображений */
+.image-grid img {
+  width: 250px; /* Уменьшение ширины изображений */
+  height: 250px; /* Фиксированная высота */
+  object-fit: cover; /* Сохранение пропорций внутри заданного размера */
+}
+
+/* CardListWithDetails.css */
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  width: 200px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content img {
+  width: 250px; /* Уменьшение ширины изображений */
+  height: 250px; /* Фиксированная высота */
+  object-fit: cover; /* Сохранение пропорций внутри заданного размера */
+  border-radius: 8px; /* Немного скруглённых углов для эстетики */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Тень для изображения */
+}
+
+

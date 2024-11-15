@@ -29,6 +29,12 @@ import StringList from './StringList';
 import CardList from './CardList';
 import NumberFilter from './NumberFilter';
 import AddList from './AddList';
+import TodoList from './TodoList';
+import SortedStringList from './ShortedStringList';
+import ProductTable from './ProductTable';
+import HoverList from './HoverList';
+import ImageGrid from './ImageGrid';
+import CardListWithDetails from './CardListWithDetails';
 
 function App() {
   // const [show, setShow] = useState(true);
@@ -70,6 +76,17 @@ function App() {
       <CardList people={[{name: 'Дарья', age: 21}, {name: 'Катя', age: 20}, {name: 'Кирилл', age: 21}]} />
       <NumberFilter numbers={[1, 2, 3, 4, 5, 6]} />
       <AddList initialItems={['котик1', 'котик2']} />
+      <TodoList />
+      <SortedStringList items={['Cherry', 'Apple', 'Banana', 'Strawberry']} />
+      <ProductTable products={[{ name: 'клубника', price: '150 рублей' }, { name: 'бананы', price: '100 рублей' }]} />
+      <HoverList items={['Котик 1', 'Котик 2', 'Котик 3']} />
+      <ImageGrid images={[{ url: 'https://i.pinimg.com/originals/30/a0/2b/30a02b9d7517d5b27803c8180d8123c6.jpg' },
+      { url: 'https://steamuserimages-a.akamaihd.net/ugc/5103172932219996638/4FE828816AAF7B0660DD1BD7C94EBD54C68EF692/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false' },
+      { url: 'https://simbio.ru/mdzh/wp-content/uploads/2019/11/332216-alexfas01.jpg' }]} />
+      <CardListWithDetails items={[
+    { title: 'Картинка 1', description: 'Котик 1', image: 'https://i.pinimg.com/originals/30/a0/2b/30a02b9d7517d5b27803c8180d8123c6.jpg' },
+    { title: 'Картинка 2', description: 'Котик 2', image: 'https://steamuserimages-a.akamaihd.net/ugc/5103172932219996638/4FE828816AAF7B0660DD1BD7C94EBD54C68EF692/?imw=512&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false' },
+    { title: 'Картинка 3', description: 'Котик 3', image: 'https://simbio.ru/mdzh/wp-content/uploads/2019/11/332216-alexfas01.jpg' }, ]}/>
       {/* <Footer /> */}
       </div>
       
