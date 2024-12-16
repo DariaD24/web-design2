@@ -1,29 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Counter from './Counter';
-import UserCard from './UserCard';
-import ChangeText from './ChangeText';
-import Button from './Button';
 import { useState } from 'react';
-import Message from './Message';
-import Welcome from './Welcome';
-import Counter2 from './Counter2';
-import Text from './Text';
-import Title from './Title';
-import List from './List';
-import YesNo from './YesNo';
+import Hello from './Hello';
+import Counter from './Counter';
+import TextInputForm from './TextInputForm';
+import HeaderText from './HeaderText';
+import ItemList from './ItemList';
+import ToggleText from './ToggleText';
+import CharCount from './CharCount';
+import EditHeader from './EditHeader';
+import DayNight from './DayNight';
+import ImageWithCaption from './ImageWithCaption';
 
 function App() {
-  const [show, setShow] = useState(true);
-  const list = ['Яблоко', 'Банан', 'Апельсин']
+  // const [show, setShow] = useState(true);
+  // const list = ['Яблоко', 'Банан', 'Апельсин']
   return (
     <div className="App">
-      <Header />
+      
       <p>Это ваше первое React-приложение.</p>
-      <UserCard name="Даша" age="21"/>
+      {/* <UserCard name="Даша" age="21"/>
       {show ? <Counter /> : <></>}
       <button onClick={() => setShow(!show)}>
                 Нажми, чтобы скрыть/показать
@@ -37,7 +34,18 @@ function App() {
       <Title number="5" />
       <List fruits={list}/>
       <YesNo />
-      <Footer />
+      
+      <Footer /> */}
+      <Hello name="Дарья"/>
+      <Counter />
+      <TextInputForm />
+      <HeaderText text="Заголовок через props" />
+      <ItemList items={['Элемент 1', 'Элемент 2', 'Элемент 3']} />
+      <ToggleText />
+      <CharCount />
+      <EditHeader />
+      <DayNight />
+      <ImageWithCaption src="https://a.d-cd.net/XmtPdFb25hEB7iT9G2Qul-LzHz8-1920.jpg" caption="Котик" />
       </div>
       
 
