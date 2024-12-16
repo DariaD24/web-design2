@@ -12,6 +12,7 @@ import CharCount from './CharCount';
 import EditHeader from './EditHeader';
 import DayNight from './DayNight';
 import ImageWithCaption from './ImageWithCaption';
+import ColorButton from './ColorButton';
 
 function App() {
   // const [show, setShow] = useState(true);
@@ -39,13 +40,14 @@ function App() {
       <Hello name="Дарья"/>
       <Counter />
       <TextInputForm />
-      <HeaderText text="Заголовок через props" />
+      <HeaderText text="Лабораторная работа 5" />
       <ItemList items={['Элемент 1', 'Элемент 2', 'Элемент 3']} />
       <ToggleText />
       <CharCount />
       <EditHeader />
       <DayNight />
       <ImageWithCaption src="https://a.d-cd.net/XmtPdFb25hEB7iT9G2Qul-LzHz8-1920.jpg" caption="Котик" />
+      <ColorButton />
       </div>
       
 
